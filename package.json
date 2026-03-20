@@ -1,5 +1,5 @@
 {
-  "name": "logseq-dictionary",
+  "name": "logseq-trans-dictionary",
   "version": "0.0.2",
   "type": "module",
   "main": "./dist/index.html",
@@ -25,7 +25,7 @@
     "buffer": "^6.0.3"
   },
   "logseq": {
-    "id": "_trashhalo-logseq-dictionary",
+    "id": "_jrwilli-logseq-dictionary",
     "icon": "./dist/icon.png"
   }
 }
