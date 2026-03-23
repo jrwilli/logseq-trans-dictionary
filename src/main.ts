@@ -228,7 +228,12 @@ async function buildPage(
   if (wikt?.gender) {
     propertyLines.push(`gender:: ${wikt.gender}`);
   }
-
+  if (verbData) {
+    propertyLines.push(`verb-form:: infinitive`);
+    if (verbData.fondamentale) {
+      propertyLines.push(`fundamental:: ${verbData.fondamentale}`);
+    }
+  }
   const blocks: any[] = [
     { content: propertyLines.join("\n") },
   ];
