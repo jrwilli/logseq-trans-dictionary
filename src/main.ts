@@ -31,7 +31,7 @@ let verbCache: Record<string, any> | null = null;
 async function loadVerbCache(): Promise<void> {
   if (verbCache) return;
   try {
-    const res = await fetch("/verbs.json");
+    const res = await fetch("./verbs.json");
     verbCache = await res.json();
     console.log(`Verb cache loaded: ${Object.keys(verbCache!).length} verbs`);
   } catch (err) {
